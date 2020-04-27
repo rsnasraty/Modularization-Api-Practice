@@ -8,7 +8,7 @@ getApiFood()
 .then( (foodData) => {
     document.querySelector("#search-results").innerHTML = ""
     //innerHTML set to nothing so you can see results one at a time 
-    AddFoodComponentToDom(createFoodSearchComponent(
+    AddFoodComponentToDom(createFoodComponent(
         {
             name: foodData.parsed[0].food.label, 
             image:foodData.parsed[0].food.image 
